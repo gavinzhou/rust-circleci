@@ -4,7 +4,7 @@ RUN apt-get update && \
     apt-get install -y curl file gcc g++ git make openssh-client \
     autoconf automake cmake libtool libcurl4-openssl-dev libssl-dev \
     libelf-dev libdw-dev binutils-dev zlib1g-dev libiberty-dev wget \
-    xz-utils pkg-config python
+    xz-utils pkg-config python libsqlite3-dev sqlite3
 
 ENV KCOV_VERSION 34  
 RUN wget https://github.com/SimonKagstrom/kcov/archive/v$KCOV_VERSION.tar.gz && \  
