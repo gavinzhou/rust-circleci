@@ -1,4 +1,4 @@
-FROM rust:1.24.1
+FROM rust:1.25.0
 
 RUN rustup update \
   && rustup install stable \
