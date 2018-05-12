@@ -23,10 +23,6 @@ references:
     keys: 
       - v1-{{ .Branch }}-{{ checksum "Dockerfile" }}
 
-  attach_workspace: &attach_workspace
-    attach_workspace:
-      at: *workspace_root
-
 jobs:
   build_container:
     <<: *container_config
