@@ -47,7 +47,7 @@ jobs:
           paths:
             - "/caches"
 
-  deploy:
+  push_container:
     <<: *container_config
     steps:
       - restore_cache: *restore_cache
@@ -73,7 +73,7 @@ workflows:
           filters:
             tags:
               only: /^v[0-9]+(\.[0-9]+)*(-.*)*/ 
-      - deploy:
+      - push_container:
           requires:
             - build_container
           filters:
