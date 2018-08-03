@@ -8,7 +8,7 @@
 can pull docker images with tag
 
 ```console
-docker pull orangesys/rust-circleci:v1.25.0
+docker pull orangesys/rust-circleci:v1.28.0
 ```
 
 I will not use latest.
